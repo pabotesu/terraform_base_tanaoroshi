@@ -12,8 +12,8 @@ resource "aws_lb" "for-business-alb" {
   ] 
 
   security_groups = [
-      "${module.for-business-http-sg.security_group_id}",
-      "${module.for-business-https-sg.security_group_id}",
+      "${module.for-alb-http-sg.security_group_id}",
+      "${module.for-alb-https-sg.security_group_id}",
   ]
 
 }
